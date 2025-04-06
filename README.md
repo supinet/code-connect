@@ -38,3 +38,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 https://github.com/alura-cursos/3499-next-14-ssr-codeconnect
 https://www.figma.com/community/file/1419095591410618806/codeconnect-formacao-next-js-ssr
+
+backend mock
+npm i -g json-server
+json-server posts.json -p 3042
+

@@ -1,10 +1,16 @@
 import Image from "next/image"
+import styles from './avatar.module.css'
 
 export const Avatar = ({ name, imageSrc  }) => {
     return (
-        <ul>
+        <ul className={styles.avatar}>
             <li>
-                <Image src={imageSrc} width={32} height={32} alt={`avatar ${name}`}/>
+                <Image
+                  src={imageSrc}
+                  width={32}
+                  height={32}
+                  alt={`avatar ${name}`}
+                />
             </li>
             <li>
                 @{name}

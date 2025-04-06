@@ -1,4 +1,6 @@
-import { Aside } from '@/components/Aside';
+import { Prompt } from 'next/font/google'
+
+import { Aside } from '@/components/Aside'
 import './globals.css'
 
 export const metadata = {
@@ -6,9 +8,15 @@ export const metadata = {
   description: "A social media network",
 };
 
+const prompt = Prompt({
+  weight: [ '400', '600' ],
+  subsets: [ 'latin' ],
+  display: 'swap',
+})
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={prompt.className}>
       <body>
         <div className='app-container'>
           <Aside />
