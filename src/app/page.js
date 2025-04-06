@@ -9,6 +9,8 @@
  * "async". Will can see it on line 29.
  */
 import { CardPost } from "@/components/CardPost";
+import logger from "@/logger"
+import styles from "./page.module.css"
 
 async function getAllPosts() {
   return await fetch('http://localhost:3042/posts')
@@ -18,7 +20,7 @@ async function getAllPosts() {
       return res.json();
     })
     .catch(error => {
-      console.error(`error ${error}`);
+      logger.error(`error ${error}`)
     });
 }
 
@@ -26,9 +28,10 @@ async function getAllPosts() {
  * using async to activate Next Server Rendering 
  */
 export default async function Home() {
+
   const posts = await getAllPosts();
   return (
-      <main>
+      <main className={styles.grid}>
         {posts?.map(post => 
           <
             CardPost
