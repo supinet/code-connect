@@ -16,7 +16,11 @@ import prisma from "../../prisma/prisma";
 
 async function getAllPosts(page) {
   try {
-    const posts = await prisma.post.findMany();
+    const posts = await prisma.post.findMany({
+      include: {
+        author: true
+      }
+    });
     return { data: posts, prev: null, next: null }
   } catch(error) {
     logger.error(`Error getting posts ${error}`)
