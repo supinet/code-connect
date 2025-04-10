@@ -43,3 +43,8 @@ backend mock
 npm i -g json-server
 json-server posts.json -p 3042
 
+
+https://github.com/alura-cursos/3498-next-14-ssr-codeconnect-parte-2
+https://www.figma.com/community/file/1419097169302831544/next-js-construa-suas-aplicacoes-com-postgres-e-prisma-codeconnect
+
+https://github.com/alura-cursos/3498-next-14-ssr-codeconnect-parte-2/tree/aula-1

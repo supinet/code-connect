@@ -3,12 +3,12 @@ import { Avatar } from "../Avatar"
 import styles from './card.module.css'
 import Link from "next/link"
 
-export const CardPost = ({ post }) => {
+export const CardPost = ({ post, highlight }) => {
     return(
         <Link href={`/posts/${post.slug}`} className={styles.card}>
-            <article className={styles.card}>
+            <article className={styles.card} style={{ width: highlight ? 9993 : 486 }}>
                 <header className={styles.header}>
-                    <figure>
+                    <figure style={{ height: highlight ? 300 : 133 }}>
                         <Image
                             src={post.cover}
                             width={438}
