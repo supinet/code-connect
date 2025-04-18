@@ -75,3 +75,7 @@
 {"level":"info","message":"Posts gotten success"}
 {"level":"info","message":"Posts gotten success"}
 {"level":"info","message":"Posts gotten success"}
+{"error":{},"level":"error","message":"Fail to get post with slug","slug":"sass-simplificando-o-csss"}
+{"error":{},"level":"error","message":"Fail to get post with slug","slug":"installHook.js.map"}
+{"error":{},"level":"error","message":"Fail to get post with slug","slug":"sass-simplificando-o-csss"}
+{"error":{},"level":"error","message":"Fail to get post with slug","slug":"sass-simplificando-o-csse"}
